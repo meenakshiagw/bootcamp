@@ -16,4 +16,8 @@ class Point
 		[@x, @y].hash
 	end
 
+	def distance(other)
+		((@x - other.x) ** 2 + (@y - other.y) ** 2) ** 0.5
+	end
+
 end
