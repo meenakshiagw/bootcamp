@@ -12,4 +12,8 @@ class Point
 		(@x == point.x) && (@y == point.y)
 	end
 
+	def hash
+		[@x, @y].hash
+	end
+
 end

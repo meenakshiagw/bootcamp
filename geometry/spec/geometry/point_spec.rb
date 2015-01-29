@@ -33,4 +33,8 @@ describe Point do
   it 'Transitive Property' do
   	expect(point1 == point2 && point2 == point3 && point3 == point1).to be true
   end
+
+  it 'implements hash' do
+    expect(point1.hash).to eq(point2.hash)
+  end
 end

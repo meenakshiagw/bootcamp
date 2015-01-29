@@ -13,11 +13,11 @@ describe Line do
   end
 
   it 'equality of lines' do
-  	expect(line1 == line2).to be true
+  	expect(line1 == line2).to eq true
   end
 
   it 'comparision against nil' do
-  	expect(line1 == nil).to be false
+  	expect(line1 == nil).to eq false
   end
 
   it 'Reflexive Property' do
@@ -30,5 +30,9 @@ describe Line do
 
   it 'Transitive Property' do
   	expect(line1 == line2 && line2 == line3 && line3 == line1).to be true
+  end
+
+  it 'implements hash' do
+    expect(line1.hash).to eq(line2.hash)
   end
 end

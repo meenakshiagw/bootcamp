@@ -16,4 +16,13 @@ class Line
 		((@point1 == line.point1 && @point2 == line.point2) || (@point1 == line.point2 && @point2 == line.point1))
 	end
 
+	def hash
+		hash_array = nil
+		if @point1.x < @point2.x
+			hash_array = [@point1, @point2]
+		else
+			hash_array = [@point2, @point1]
+		end
+		hash_array.hash
+	end
 end
