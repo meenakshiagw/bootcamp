@@ -1,1 +1,1 @@
-require "rectangle"
+require "geometry"
