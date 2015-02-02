@@ -3,7 +3,9 @@ require 'spec_helper'
 describe Money do
 
 	let(:money1) { Money.new(1, 50) }
+	let(:money1_duplicate) { Money.new(1, 50) }
 	let(:money2) { Money.new(0, 50) }
+	let(:money3) { Money.new(1, 10) }
 
 	
 	describe "+" do
@@ -17,9 +19,21 @@ describe Money do
 		end
 
 		it "express associative property" do
-			expect(money1 + money2).to eq(money2 + money1) 
+			expect((money1 + money2) + money3).to eq(money2 + (money1 + money3)) 
 		end
 
+		it "express additive identity property" do
+			expect(money1 + Money.new(0, 0)).to eq(money1) 
+		end
+
+	end
+
+	it "sorts the multiple values of money" do
+		expect([money1, money2, money3, money1_duplicate].sort).to eq([money2, money3, money1, money1_duplicate])
+	end
+
+	it "identifies the larger value of money" do
+		expect(money1.comparison(money2)).to eq(money1)
 	end
 
 	it "subtracts two sums of money" do

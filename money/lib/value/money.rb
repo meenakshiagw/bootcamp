@@ -29,4 +29,18 @@ class Money
     Money.new(rupee - other.rupee, 0)
   end
 
+  def <=>(other)
+    if paisa > other.paisa
+      1
+    elsif paisa == other.paisa
+      0
+    else
+      -1
+    end
+  end
+
+  def comparison(other)
+    paisa > other.paisa ? self : other
+  end
+
 end
