@@ -33,6 +33,7 @@ describe Money do
 	end
 
 	it "identifies the larger value of money" do
+		#The user actually wants to use the comparison operators. (<, <=, >, >=)
 		expect(money1.comparison(money2)).to eq(money1)
 	end
 
