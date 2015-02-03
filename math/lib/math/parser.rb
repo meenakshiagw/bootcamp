@@ -1,3 +1,4 @@
+# It takes the input in form of string and gives output in the form of string.
 class Parser
 
 	def initialize(calculator)
@@ -12,7 +13,7 @@ class Parser
 			else
 				@calculator.send(input_components[0].to_sym, input_components[1].to_f)
 			end
-		rescue Exception => e
+		rescue NoMethodError => e
 			"Incorrect input"
 		end
 	end

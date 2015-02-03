@@ -1,3 +1,4 @@
+# It perfoms the add, subtract, multiply, divide, cancel and exit function.
 class Calculator 
 
 	def initialize
@@ -22,5 +23,9 @@ class Calculator
 
 	def cancel
 		@number = 0
+	end
+
+	def exit
+		exit
 	end
 end

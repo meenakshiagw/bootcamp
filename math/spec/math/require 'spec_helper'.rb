@@ -25,8 +25,8 @@ describe Parser do
 		expect(parser.input("cancel")).to eq(0.0)
 	end
 
-	it "doesn't understand invalid inputs" do
-		expect(parser.input("asdfadvbc")).to eq("Incorrect input")
+	it "understands the exit function" do
+		expect(parser.input("exit")).to eq(0.0)
 	end
 
 end

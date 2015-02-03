@@ -1,3 +1,4 @@
+# It takes input from console and give output to console.
 class ConsoleIO
 
 	def initialize(parser)
@@ -7,7 +8,7 @@ class ConsoleIO
 	def start_IO_loop
 		print "$ "
 		input_string = gets.chomp
-		while input_string != 'exit' do 
+		while true do 
 	    puts @parser.input(input_string) 
 	    print "$ "
 	    input_string = gets.chomp    
