@@ -1,0 +1,379 @@
+---
+:cane:
+  :total_violations: 21
+  :violations:
+    :line_style:
+    - :line: lib/value/money.rb:21
+      :description: Line contains trailing whitespace
+    - :line: lib/value/money.rb:26
+      :description: Line contains trailing whitespace
+    - :line: spec/value/money_spec.rb:5
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:6
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:8
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:9
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:10
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:12
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:13
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:14
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:16
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:18
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:19
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:20
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:22
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:23
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:24
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:26
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:27
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:28
+      :description: Line contains hard tabs
+    - :line: spec/value/money_spec.rb:29
+      :description: Line contains hard tabs
+:churn:
+  :changes: []
+  :class_churn: []
+  :method_churn: []
+  :changed_files:
+  - money/Gemfile
+  - money/Gemfile.lock
+  - money/Rakefile
+  - money/lib/value.rb
+  - money/lib/value/money.rb
+  - money/spec/spec_helper.rb
+  - money/spec/value/money_spec.rb
+  - "rectangle (area)/lib/geometry.rb\t"
+  - "rectangle (area)/spec/geometry/reactangle_spec.rb\t"
+  - "rectangle (area)/spec/geometry/square_spec.rb\t"
+  - "rectangle (area)/spec/spec_helper.rb\t"
+  :changed_classes: []
+  :changed_methods: []
+:flay:
+  :total_score: '0'
+  :matches: []
+:flog:
+  :total: 24.089069184960465
+  :average: 4.014844864160078
+  :method_containers:
+  - :name: Money
+    :path: lib/value/money.rb
+    :total_score: 23.089069184960465
+    :highest_score: 10.95
+    :average_score: 4.617813836992093
+    :methods:
+      Money#combination:
+        :operators:
+          :lit_fixnum: 0.95
+          :/: 1.7999999999999998
+          :to_s: 3.0
+          :+: 3.5999999999999996
+          :%: 1.5999999999999999
+        :score: 10.95
+        :path: lib/value/money.rb:20
+      Money#+:
+        :operators:
+          :rupee: 2.8
+          :+: 1.2
+          :new: 1.0
+        :score: 5.0
+        :path: lib/value/money.rb:16
+      Money#==:
+        :operators:
+          :rupee: 2.4
+          :==: 1.0
+        :score: 3.4
+        :path: lib/value/money.rb:24
+      Money#initialize:
+        :operators:
+          :assignment: 1.0
+          :lit_fixnum: 0.35
+          :*: 1.2
+          :+: 1.0
+        :score: 2.7390691849604676
+        :path: lib/value/money.rb:4
+      Money#rupee:
+        :operators:
+          :/: 1.0
+        :score: 1.0
+        :path: lib/value/money.rb:8
+  - :name: main
+    :path: ''
+    :total_score: 1.0
+    :highest_score: 1.0
+    :average_score: 1.0
+    :methods:
+      main#none:
+        :operators:
+          :require: 1.0
+        :score: 1.0
+        :path: 
+:saikuro:
+  :files:
+  - :classes:
+    - :class_name: ''
+      :complexity: 0
+      :lines: 1
+      :methods: []
+    - :class_name: Money
+      :complexity: 6
+      :lines: 25
+      :methods:
+      - :name: Money#==
+        :complexity: 1
+        :lines: 2
+      - :name: Money#combination
+        :complexity: 1
+        :lines: 2
+      - :name: Money#+
+        :complexity: 1
+        :lines: 2
+      - :name: Money#paisa
+        :complexity: 1
+        :lines: 2
+      - :name: Money#rupee
+        :complexity: 1
+        :lines: 2
+      - :name: Money#initialize
+        :complexity: 1
+        :lines: 2
+    :filename: lib/value/money.rb
+  :classes:
+  - :name: Money
+    :complexity: 6
+    :lines: 25
+    :defs:
+    - :name: Money#initialize
+      :complexity: 1
+      :lines: 2
+    - :name: Money#rupee
+      :complexity: 1
+      :lines: 2
+    - :name: Money#paisa
+      :complexity: 1
+      :lines: 2
+    - :name: Money#+
+      :complexity: 1
+      :lines: 2
+    - :name: Money#combination
+      :complexity: 1
+      :lines: 2
+    - :name: Money#==
+      :complexity: 1
+      :lines: 2
+  - :name: ''
+    :complexity: 0
+    :lines: 1
+  :methods:
+  - :name: Money#==
+    :complexity: 1
+    :lines: 2
+  - :name: Money#combination
+    :complexity: 1
+    :lines: 2
+  - :name: Money#+
+    :complexity: 1
+    :lines: 2
+  - :name: Money#paisa
+    :complexity: 1
+    :lines: 2
+  - :name: Money#rupee
+    :complexity: 1
+    :lines: 2
+  - :name: Money#initialize
+    :complexity: 1
+    :lines: 2
+:reek:
+  :matches: {}
+:roodi:
+  :total:
+  - Found 0 errors.
+  :problems: []
+:stats:
+  :codeLOC: 21
+  :testLOC: 22
+  :code_to_test_ratio: 1.0
+  :lines:
+  - :name: Libraries
+    :lines: 28
+    :loc: 21
+    :classes: 1
+    :methods: 4
+    :methods_per_class: 4
+    :loc_per_method: 3
+  - :name: Value specs
+    :lines: 31
+    :loc: 22
+    :classes: 0
+    :methods: 0
+    :methods_per_class: 0
+    :loc_per_method: 0
+  - :name: Total
+    :lines: 59
+    :loc: 43
+    :classes: 1
+    :methods: 4
+    :methods_per_class: 4
+    :loc_per_method: 8
+:hotspots:
+  files:
+  - location:
+      class_name: 
+      method_name: 
+      file_path: lib/value/money.rb:20
+      file_name: lib/value/money.rb
+      line_number: '20'
+      hash_key: '["lib/value/money.rb:20", nil, nil]'
+    details:
+      flog: complexity is 10.9
+      saikuro: average complexity is 1.0
+  - location:
+      class_name: 
+      method_name: 
+      file_path: lib/value/money.rb:16
+      file_name: lib/value/money.rb
+      line_number: '16'
+      hash_key: '["lib/value/money.rb:16", nil, nil]'
+    details:
+      flog: complexity is 5.0
+      saikuro: complexity is 1.0
+  - location:
+      class_name: 
+      method_name: 
+      file_path: lib/value/money.rb:24
+      file_name: lib/value/money.rb
+      line_number: '24'
+      hash_key: '["lib/value/money.rb:24", nil, nil]'
+    details:
+      flog: complexity is 3.4
+      saikuro: complexity is 1.0
+  - location:
+      class_name: 
+      method_name: 
+      file_path: lib/value/money.rb:4
+      file_name: lib/value/money.rb
+      line_number: '4'
+      hash_key: '["lib/value/money.rb:4", nil, nil]'
+    details:
+      flog: complexity is 2.7
+      saikuro: complexity is 1.0
+  - location:
+      class_name: 
+      method_name: 
+      file_path: lib/value/money.rb:8
+      file_name: lib/value/money.rb
+      line_number: '8'
+      hash_key: '["lib/value/money.rb:8", nil, nil]'
+    details:
+      flog: complexity is 1.0
+      saikuro: complexity is 1.0
+  classes:
+  - location:
+      class_name: Money
+      method_name: 
+      file_path: lib/value/money.rb:20
+      file_name: lib/value/money.rb
+      line_number: '20'
+      hash_key: '["lib/value/money.rb:20", "Money", nil]'
+    details:
+      flog: average complexity is 4.6
+      saikuro: average complexity is 1.0
+  - location:
+      class_name: main
+      method_name: 
+      file_path: 
+      file_name: 
+      line_number: 
+      hash_key: '[nil, "main", nil]'
+    details:
+      flog: complexity is 1.0
+  methods:
+  - location:
+      class_name: Money
+      method_name: Money#combination
+      file_path: lib/value/money.rb:20
+      file_name: lib/value/money.rb
+      line_number: '20'
+      hash_key: '["lib/value/money.rb:20", "Money", "Money#combination"]'
+      simple_method_name: "#combination"
+    details:
+      flog: complexity is 10.9
+      saikuro: complexity is 1.0
+  - location:
+      class_name: Money
+      method_name: Money#+
+      file_path: lib/value/money.rb:16
+      file_name: lib/value/money.rb
+      line_number: '16'
+      hash_key: '["lib/value/money.rb:16", "Money", "Money#+"]'
+      simple_method_name: "#+"
+    details:
+      flog: complexity is 5.0
+      saikuro: complexity is 1.0
+  - location:
+      class_name: Money
+      method_name: Money#==
+      file_path: lib/value/money.rb:24
+      file_name: lib/value/money.rb
+      line_number: '24'
+      hash_key: '["lib/value/money.rb:24", "Money", "Money#=="]'
+      simple_method_name: "#=="
+    details:
+      flog: complexity is 3.4
+      saikuro: complexity is 1.0
+  - location:
+      class_name: Money
+      method_name: Money#initialize
+      file_path: lib/value/money.rb:4
+      file_name: lib/value/money.rb
+      line_number: '4'
+      hash_key: '["lib/value/money.rb:4", "Money", "Money#initialize"]'
+      simple_method_name: "#initialize"
+    details:
+      flog: complexity is 2.7
+      saikuro: complexity is 1.0
+  - location:
+      class_name: Money
+      method_name: Money#rupee
+      file_path: lib/value/money.rb:8
+      file_name: lib/value/money.rb
+      line_number: '8'
+      hash_key: '["lib/value/money.rb:8", "Money", "Money#rupee"]'
+      simple_method_name: "#rupee"
+    details:
+      flog: complexity is 1.0
+      saikuro: complexity is 1.0
+  - location:
+      class_name: main
+      method_name: main#none
+      file_path: 
+      file_name: 
+      line_number: 
+      hash_key: '[nil, "main", "main#none"]'
+      simple_method_name: "#none"
+    details:
+      flog: complexity is 1.0
+  - location:
+      class_name: Money
+      method_name: Money#paisa
+      file_path: lib/value/money.rb:20
+      file_name: lib/value/money.rb
+      line_number: '20'
+      hash_key: '["lib/value/money.rb:20", "Money", "Money#paisa"]'
+      simple_method_name: "#paisa"
+    details:
+      saikuro: complexity is 1.0
