@@ -25,4 +25,14 @@ describe Parser do
 		expect(parser.output).to eq(0.0)
 	end
 
+	it "understands the cancel function" do
+		parser.input("cancel")
+		expect(parser.output).to eq(0.0)
+	end
+
+	it "understands the exit function" do
+		parser.input("exit")
+		expect(parser.output).to eq(0.0)
+	end
+
 end

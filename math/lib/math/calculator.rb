@@ -1,18 +1,26 @@
 class Calculator 
 
-	def add(a , b)
-		a + b
+	def initialize
+		@number = 0.0
 	end
 
-	def subtract(a, b)
-		a - b
+	def add(a)
+		@number + a
 	end
 
-	def multiply(a, b)
-		a * b
+	def subtract(a)
+		@number - a
 	end
 
-	def divide(a, b)
-		a / b
+	def multiply(a)
+		@number * a
+	end
+
+	def divide(a)
+		@number / a
+	end
+
+	def cancel
+		@number = 0
 	end
 end
