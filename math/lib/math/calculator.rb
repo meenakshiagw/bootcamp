@@ -5,19 +5,19 @@ class Calculator
 	end
 
 	def add(a)
-		@number + a
+		@number += a
 	end
 
 	def subtract(a)
-		@number - a
+		@number -= a
 	end
 
 	def multiply(a)
-		@number * a
+		@number *= a
 	end
 
 	def divide(a)
-		@number / a
+		@number /= a
 	end
 
 	def cancel

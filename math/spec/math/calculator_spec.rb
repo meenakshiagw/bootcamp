@@ -24,4 +24,7 @@ describe Calculator do
 		expect(calculator.cancel).to eq(0)
 	end
 
+	it "should exit the program" do
+	end
+
 end

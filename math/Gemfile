@@ -2,5 +2,6 @@ source "http://rubygems.org"
 
 gem 'rake'
 gem 'rspec'
+gem 'rspec-mocks'
 gem 'simplecov'
 gem 'metric_fu' 

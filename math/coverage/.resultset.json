@@ -3,6 +3,7 @@
     "coverage": {
       "/Users/meenakshi/Desktop/mdl/bootcamp/math/lib/math.rb": [
         1,
+        1,
         1
       ],
       "/Users/meenakshi/Desktop/mdl/bootcamp/math/lib/math/calculator.rb": [
@@ -53,10 +54,30 @@
         null,
         null,
         null,
+        null
+      ],
+      "/Users/meenakshi/Desktop/mdl/bootcamp/math/lib/math/console_io.rb": [
         1,
-        6,
+        null,
+        1,
+        0,
         null,
         null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/meenakshi/Desktop/mdl/bootcamp/math/spec/math/console_io_spec.rb": [
+        1,
+        null,
+        1,
         null
       ],
       "/Users/meenakshi/Desktop/mdl/bootcamp/math/spec/math/parser_spec.rb": [
@@ -69,30 +90,24 @@
         null,
         1,
         1,
-        1,
         null,
         null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
         1,
         1,
         null,
         null,
         1,
         1,
+        null,
+        null,
+        1,
         1,
         null,
         null,
         1,
         1,
-        1,
         null,
         null,
-        1,
         1,
         1,
         null,
@@ -100,6 +115,6 @@
         null
       ]
     },
-    "timestamp": 1422942118
+    "timestamp": 1422945338
   }
 }

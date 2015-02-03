@@ -146,4 +146,5 @@ DEPENDENCIES
   metric_fu
   rake
   rspec
+  rspec-mocks
   simplecov
